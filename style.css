@@ -47,12 +47,12 @@ button {
     border-radius: 5px; /* Added slight rounding to modernise the buttons */
 }  
   
+/* Locate button#equal and update it to this: */
 button#equal{  
-    height: 130px;  
     background-color: darkgray;  
-    color :black  
+    color: black;  
 }  
-  
+
 .calculator button#clear{  
     background-color: crimson;  
     color : white  
