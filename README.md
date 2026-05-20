@@ -6,6 +6,7 @@ A clean, minimalist web-based calculator built using vanilla HTML, CSS, and Java
 
 * **Basic Operations**: Supports addition, subtraction, multiplication, and division.
 * **Expression Grouping**: Includes functional parentheses `(` and `)` for complex mathematical expressions.
+* **Floating-Point Operations**: Dedicated decimal point configuration for processing fractional mathematics.
 * **Instant Evaluation**: Computes formulas dynamically using JavaScript engine optimization.
 * **Error Prevention**: Guardrails against broken expressions (e.g., `5++` or `9*`) using runtime exception safety.
 * **Smart Display Alerts**: User guidance notifications if an empty calculation is attempted.
@@ -32,6 +33,8 @@ A clean, minimalist web-based calculator built using vanilla HTML, CSS, and Java
 3. Double-click the `index.html` file to launch the calculator instantly in your default web browser.
 
 ## 🔧 Code Quality & Safety Enhancements
-* Added a fixed width to the display component to prevent global wrapper layout shifts during long entries.
-* Converted legacy `.substr()` string slicing to modern `.substring()` mechanics inside the backspace router.
-* Fixed a text-injection bug by clearing alert notifications safely if a user attempts to type during an active alert sequence.
+* **Grid Refactoring**: Standardised the grid by removing row spanning elements, maintaining physical balance for parenthetical keys `(` and `)`.
+* **Smart Decimals**: Incorporated dynamic string tracking logic to prevent illegal nested floating points (e.g., preventing inputs like `5.5.5`).
+* **Display Stability**: Added a fixed width to the display component to prevent global wrapper layout shifts during long entries.
+* **Modern String Slicing**: Converted legacy `.substr()` string slicing to modern `.substring()` mechanics inside the backspace router.
+* **Text Guardrails**: Fixed a text-injection bug by clearing alert notifications safely if a user attempts to type during an active alert sequence.
